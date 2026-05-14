@@ -6,5 +6,5 @@ All this happens within the console.
 ## Application Components
 ![Software architecture](res/BudgetPlanner_architecture.jpg "Software architecture")
 
-## Exaple Output
+## Example Output
 ![Example image of programm output](res/example_output.jpg "Example image of programm output")
