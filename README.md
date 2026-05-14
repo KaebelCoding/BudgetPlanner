@@ -1,5 +1,7 @@
 # Budget Planner
 
-This is a little app to calculate out your budget to see what costs you can cover with what income.
+This programm lets you do simple cost calculations and planning out your budgets by adding incomes and subtracting costs.
+All this happens within the console.
 
+## Application Overview
 ![Software architecture](res/BudgetPlanner_architecture.jpg "Software architecture")
