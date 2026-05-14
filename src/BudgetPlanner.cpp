@@ -2,7 +2,7 @@
 
 void BudgetPlanner::welcomeMsg()
 {
-	std::cout << "=== Budget Planner ================\n\nWelcome to the budget planner!\nThis programm will calculate your budget and give you some infos about your spendings.\nThe currency is in Euros.\n" << std::endl;
+	std::cout << "== Budget Planner ==============================\n= Welcome to the budget planner!               =\n= This programm will calculate your budget and =\n= give you some infos about your spendings.    =\n= The currency is in Euros.                    =\n================================================\n" << std::endl;
 }
 
 void BudgetPlanner::askForIncomes()
@@ -17,7 +17,7 @@ void BudgetPlanner::askForIncomes()
 			std::cin.ignore(10000, '\n');					// Remove bad input
 		}
 		income.push_back(tempIncome);
-		std::cout << tempIncome << " EURO\n" << std::flush;
+		std::cout << income.size() << ".income: " << tempIncome << " EURO\n" << std::flush;
 		std::cout << "Is there another income? (yes/no) " << std::flush;
 		std::cin >> InputAnotherIncome;
 	} while (InputAnotherIncome.compare("no"));
@@ -36,7 +36,7 @@ void BudgetPlanner::askForCosts()
 			std::cin.ignore(10000, '\n');					// Remove bad input
 		}
 		costs.push_back(tempCost);
-		std::cout << tempCost << " EURO\n" << std::flush;
+		std::cout << costs.size() << ".cost: " << tempCost << " EURO\n" << std::flush;
 		std::cout << "Is there another cost? (yes/no) " << std::flush;
 		std::cin >> InputAnotherCost;
 	} while (InputAnotherCost.compare("no"));
