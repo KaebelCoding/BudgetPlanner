@@ -34,4 +34,6 @@ public:
 	void printSum ();
 	void printPercent ();
 	void printResult ();
+
+	void run();
 };

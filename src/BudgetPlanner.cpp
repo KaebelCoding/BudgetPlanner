@@ -10,8 +10,12 @@ void BudgetPlanner::askForIncomes()
 	do
 	{
 		std::cout << "What is your income? " << std::flush;
-		std::cin >> tempIncome;
-		// TODO check for correct input
+		// Input Validation
+		while (!(std::cin >> tempIncome)) {					// Keep asking until the user enters a valid number
+			std::cout << "Invalid input. Try again: ";
+			std::cin.clear();								// Reset input errors
+			std::cin.ignore(10000, '\n');					// Remove bad input
+		}
 		income.push_back(tempIncome);
 		std::cout << tempIncome << " EURO\n" << std::flush;
 		std::cout << "Is there another income? (yes/no) " << std::flush;
@@ -25,8 +29,12 @@ void BudgetPlanner::askForCosts()
 	do
 	{
 		std::cout << "What are your costs? " << std::flush;
-		std::cin >> tempCost;
-		// TODO check for correct input
+		// Input Validation
+		while (!(std::cin >> tempCost)) {					// Keep asking until the user enters a valid number
+			std::cout << "Invalid input. Try again: ";
+			std::cin.clear();								// Reset input errors
+			std::cin.ignore(10000, '\n');					// Remove bad input
+		}
 		costs.push_back(tempCost);
 		std::cout << tempCost << " EURO\n" << std::flush;
 		std::cout << "Is there another cost? (yes/no) " << std::flush;
@@ -75,4 +83,19 @@ void BudgetPlanner::printResult()
 	{
 		std::cout << "The costs are too high for your budget." << std::endl;
 	}
+}
+
+void BudgetPlanner::run()
+{
+	BudgetPlanner::welcomeMsg();
+
+	BudgetPlanner::askForIncomes();
+	BudgetPlanner::askForCosts();
+
+	BudgetPlanner::calcSum();
+	BudgetPlanner::calcPercent();
+
+	BudgetPlanner::printSum();
+	BudgetPlanner::printPercent();
+	BudgetPlanner::printResult();
 }
