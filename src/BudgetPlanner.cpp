@@ -13,9 +13,10 @@ void BudgetPlanner::askForIncomes()
 		std::cin >> tempIncome;
 		// TODO check for correct input
 		income.push_back(tempIncome);
-		std::cout << "Is there another income? (0/1) " << std::flush;
-		std::cin >> anotherIncome;
-	} while (anotherIncome);
+		std::cout << tempIncome << " EURO\n" << std::flush;
+		std::cout << "Is there another income? (yes/no) " << std::flush;
+		std::cin >> InputAnotherIncome;
+	} while (InputAnotherIncome.compare("no"));
 	std::cout << std::endl;
 }
 
@@ -27,18 +28,21 @@ void BudgetPlanner::askForCosts()
 		std::cin >> tempCost;
 		// TODO check for correct input
 		costs.push_back(tempCost);
-		std::cout << "Is there another cost? (0/1) " << std::flush;
-		std::cin >> anotherCost;
-	} while (anotherCost);
+		std::cout << tempCost << " EURO\n" << std::flush;
+		std::cout << "Is there another cost? (yes/no) " << std::flush;
+		std::cin >> InputAnotherCost;
+	} while (InputAnotherCost.compare("no"));
 	std::cout << std::endl;
 }
 
 void BudgetPlanner::calcSum()
 {
+	sumIncome = 0;
 	for (auto i : income)
 	{
 		sumIncome += i;
 	}
+	sumCosts = 0;
 	for (auto c : costs)
 	{
 		sumCosts += c;
@@ -48,7 +52,7 @@ void BudgetPlanner::calcSum()
 
 void BudgetPlanner::printSum()
 {
-	std::cout << "After all costs you have " << sumTotal << " \u20AC left." << std::endl;
+	std::cout << "After all costs you have " << sumTotal << " EURO left of your budget." << std::endl;
 }
 
 void BudgetPlanner::calcPercent()
@@ -58,7 +62,7 @@ void BudgetPlanner::calcPercent()
 
 void BudgetPlanner::printPercent()
 {
-	std::cout << "The costs make " << percent << "\% of your budget." << std::endl;
+	std::cout << "The costs makes " << percent << "\% of your budget." << std::endl;
 }
 
 void BudgetPlanner::printResult()
