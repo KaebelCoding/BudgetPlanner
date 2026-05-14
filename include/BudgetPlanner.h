@@ -31,9 +31,9 @@ public:
 	void calcSum ();
 	void calcPercent ();
 
-	void printSum ();
-	void printPercent ();
 	void printResult ();
+	void printPercent ();
+	void printSum ();
 
 	void run();
 };

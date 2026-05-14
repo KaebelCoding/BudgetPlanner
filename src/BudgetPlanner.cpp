@@ -58,19 +58,9 @@ void BudgetPlanner::calcSum()
 	sumTotal = sumIncome - sumCosts;
 }
 
-void BudgetPlanner::printSum()
-{
-	std::cout << "After all costs you have " << sumTotal << " EURO left of your budget." << std::endl;
-}
-
 void BudgetPlanner::calcPercent()
 {
 	percent = static_cast<float>(sumCosts * 100) / sumIncome;
-}
-
-void BudgetPlanner::printPercent()
-{
-	std::cout << "The costs makes " << percent << "\% of your budget." << std::endl;
 }
 
 void BudgetPlanner::printResult()
@@ -85,6 +75,16 @@ void BudgetPlanner::printResult()
 	}
 }
 
+void BudgetPlanner::printSum()
+{
+	std::cout << "After all costs you have " << sumTotal << " EURO left of your budget." << std::endl;
+}
+
+void BudgetPlanner::printPercent()
+{
+	std::cout << "The costs makes " << percent << "\% of your budget." << std::endl;
+}
+
 void BudgetPlanner::run()
 {
 	BudgetPlanner::welcomeMsg();
@@ -95,7 +95,7 @@ void BudgetPlanner::run()
 	BudgetPlanner::calcSum();
 	BudgetPlanner::calcPercent();
 
-	BudgetPlanner::printSum();
-	BudgetPlanner::printPercent();
 	BudgetPlanner::printResult();
+	BudgetPlanner::printPercent();
+	BudgetPlanner::printSum();
 }
