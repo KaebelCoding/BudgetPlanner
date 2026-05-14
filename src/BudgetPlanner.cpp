@@ -2,7 +2,7 @@
 
 void BudgetPlanner::welcomeMsg()
 {
-	std::cout << "=== Budget Planner ================\n" << std::endl;
+	std::cout << "=== Budget Planner ================\n\nWelcome to the budget planner!\nThis programm will calculate your budget and give you some infos about your spendings.\nThe currency is in Euros.\n" << std::endl;
 }
 
 void BudgetPlanner::askForIncomes()
