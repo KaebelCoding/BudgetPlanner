@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.8910444"
-     inkscape:cx="623.465"
-     inkscape:cy="399.51468"
+     inkscape:zoom="7.5641776"
+     inkscape:cx="291.37338"
+     inkscape:cy="181.18295"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -286,5 +286,38 @@
            x="184.53142"
            y="198.26004">| Buttons</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:0.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.4;stroke-linejoin:round;stroke-dashoffset:0.566929;paint-order:markers fill stroke"
+       x="70.096848"
+       y="32.27261"
+       id="text275"><tspan
+         sodipodi:role="line"
+         id="tspan273"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.4"
+         x="70.096848"
+         y="32.27261">BudgetPlanner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:0.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.4;stroke-linejoin:round;stroke-dashoffset:0.566929;paint-order:markers fill stroke"
+       x="46.330898"
+       y="31.785656"
+       id="text1145"><tspan
+         sodipodi:role="line"
+         id="tspan1143"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria;-inkscape-font-specification:Cambria;stroke-width:0.4"
+         x="46.330898"
+         y="31.785656">€</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:0.25;font-family:Cambria;-inkscape-font-specification:Cambria;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.4;stroke-linejoin:round;stroke-dashoffset:0.566929;paint-order:markers fill stroke"
+       x="47.532547"
+       y="32.873432"
+       id="text1875"><tspan
+         sodipodi:role="line"
+         id="tspan1873"
+         style="fill:#00ff15;fill-opacity:1;stroke-width:0.4"
+         x="47.532547"
+         y="32.873432">✓</tspan></text>
   </g>
 </svg>
